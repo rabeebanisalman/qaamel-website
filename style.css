@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: black;
+    color: white;
+}
+
+#home {
+    scroll-margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/imgs/camel-bg.jpg);
+    background-size: cover;
+    background-position: 75% bottom; 
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    width: 100%;
+    display: flex;
+}
+
+#navbar img {
+    height: 30px;
+}
+
+#navbar li{
+    all: unset;
+}
+
+#navbar a {
+    all: unset;
+}
+
+#navbar button {
+    display: none;
+}
+
+#sidebar {
+    display: none;
+}
