@@ -1,91 +1,65 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial;
 }
 
 html {
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 body {
     min-height: 100vh;
-    max-width: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-    background-color: black;
-    color: white;
-}
-
-#home {
-    scroll-margin-top: 56px;
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content:center;
-    min-height: 100vh;
     width: 100%;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(/imgs/camel-bg.jpg);
-    background-size: cover;
-    background-position: 75% bottom; 
 }
 
-#home #txt {
+.mesh {
+  background: radial-gradient(ellipse 28% 28% at 50% 82%, #dce6ff 0%, #dce6ff 12.75%, #dce6ffe4 30.2%, #dce6ffa5 47.65%, #dce6ff5a 65.1%, #dce6ff1b 82.55%, #dce6ff00 100%),
+    radial-gradient(ellipse 75% 75% at 50% 105%, #94b6ff 0%, #94b6ff 8.5%, #94b6ffe4 26.8%, #94b6ffa5 45.1%, #94b6ff5a 63.4%, #94b6ff1b 81.7%, #94b6ff00 100%),
+    radial-gradient(ellipse 60% 60% at 20% 90%, #3681ff 0%, #3681ff 12.75%, #3681ffe4 30.2%, #3681ffa5 47.65%, #3681ff5a 65.1%, #3681ff1b 82.55%, #3681ff00 100%),
+    radial-gradient(ellipse 75% 75% at 80% 85%, #0e3f88 0%, #0e3f88 12.75%, #0e3f88e4 30.2%, #0e3f88a5 47.65%, #0e3f885a 65.1%, #0e3f881b 82.55%, #0e3f8800 100%),
+    #02050b;
+  position: relative;
+  isolation: isolate;
+}
+
+.mesh::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Cfilter id='n' x='0' y='0' width='100%25' height='100%25' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' seed='11' stitchTiles='stitch' result='t'/%3E%3CfeColorMatrix in='t' type='matrix' values='0.333 0.333 0.333 0 0 0.333 0.333 0.333 0 0 0.333 0.333 0.333 0 0 0 0 0 0 1'/%3E%3CfeComponentTransfer%3E%3CfeFuncR type='linear' slope='2.598' intercept='-0.799'/%3E%3CfeFuncG type='linear' slope='2.598' intercept='-0.799'/%3E%3CfeFuncB type='linear' slope='2.598' intercept='-0.799'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 256px 256px;
+  mix-blend-mode: hard-light;
+  opacity: 0.108;
+}
+
+#nav-bar {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: first baseline;
-    padding-left: 40px;
-    min-height: 100vh;
-    width: 50%;
-}
-
-#home #txt h1 {
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-#navbar {
-    position: fixed;
-    top: 0;
-    background-color: black;
-    align-items: center;
     justify-content: space-between;
-    height: 56px;
-    width: 100%;
+    color: rgba(255,255,255,0.4);
+    font-family: 'Chathura';
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#nav-bar ul {
     display: flex;
 }
 
-#navbar img {
-    padding-left: 10px;
-    height: 25px;
-}
-
-#navbar ul {
-    padding-right: 20px;
-}
-
-#navbar li{
+#nav-bar li {
     all: unset;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
-#navbar a {
-    color: white;
-    text-decoration: none;
+#nav-bar a {
 }
 
-#navbar a:hover,
-#navbar a:active {
-    text-decoration: underline;
-}
-
-#navbar button {
+#nav-bar button {
     display: none;
 }
 
-#sidebar {
+#menu-bar {
     display: none;
 }
