@@ -12,12 +12,16 @@ body {
     width: 100%;
 }
 
+h1 {
+    color: gray;
+}
+
 .mesh {
-  background: radial-gradient(ellipse 28% 28% at 50% 82%, #dce6ff 0%, #dce6ff 12.75%, #dce6ffe4 30.2%, #dce6ffa5 47.65%, #dce6ff5a 65.1%, #dce6ff1b 82.55%, #dce6ff00 100%),
-    radial-gradient(ellipse 75% 75% at 50% 105%, #94b6ff 0%, #94b6ff 8.5%, #94b6ffe4 26.8%, #94b6ffa5 45.1%, #94b6ff5a 63.4%, #94b6ff1b 81.7%, #94b6ff00 100%),
-    radial-gradient(ellipse 60% 60% at 20% 90%, #3681ff 0%, #3681ff 12.75%, #3681ffe4 30.2%, #3681ffa5 47.65%, #3681ff5a 65.1%, #3681ff1b 82.55%, #3681ff00 100%),
-    radial-gradient(ellipse 75% 75% at 80% 85%, #0e3f88 0%, #0e3f88 12.75%, #0e3f88e4 30.2%, #0e3f88a5 47.65%, #0e3f885a 65.1%, #0e3f881b 82.55%, #0e3f8800 100%),
-    #02050b;
+  background: radial-gradient(ellipse 28% 28% at 50% 82%, #fae2c0 0%, #fae2c0 12.75%, #fae2c0e4 30.2%, #fae2c0a5 47.65%, #fae2c05a 65.1%, #fae2c01b 82.55%, #fae2c000 100%),
+    radial-gradient(ellipse 75% 75% at 50% 105%, #eea73b 0%, #eea73b 8.5%, #eea73be4 26.8%, #eea73ba5 45.1%, #eea73b5a 63.4%, #eea73b1b 81.7%, #eea73b00 100%),
+    radial-gradient(ellipse 60% 60% at 20% 90%, #bd7500 0%, #bd7500 12.75%, #bd7500e4 30.2%, #bd7500a5 47.65%, #bd75005a 65.1%, #bd75001b 82.55%, #bd750000 100%),
+    radial-gradient(ellipse 75% 75% at 80% 85%, #613800 0%, #613800 12.75%, #613800e4 30.2%, #613800a5 47.65%, #6138005a 65.1%, #6138001b 82.55%, #61380000 100%),
+    #090401;
   position: relative;
   isolation: isolate;
 }
@@ -36,7 +40,7 @@ body {
 #nav-bar {
     display: flex;
     justify-content: space-between;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.3);
     font-family: 'Chathura';
     font-size: 35px;
     font-weight: bold;
