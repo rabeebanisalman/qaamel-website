@@ -8,12 +8,45 @@ html {
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#home {
+    height: 100%;
+    overflow-y: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     color: gray;
+    font-size: 25px;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    width: 0;
+    letter-spacing: .15em;
+    animation: 
+        typing 3.5s steps(62, end) forwards,
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 79ch; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
 }
 
 .mesh {
@@ -38,8 +71,14 @@ h1 {
 }
 
 #nav-bar {
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
     display: flex;
+    width: 100vw;
+    overflow: hidden;
     justify-content: space-between;
+    align-items: center;
     color: rgba(255,255,255,0.3);
     font-family: 'Chathura';
     font-size: 35px;
